@@ -1,45 +1,42 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     const buttons = document.querySelectorAll('.category-btn');
-//     const foodCardsContainer = document.querySelector('.food-cards');
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('modal');
+    const overlay = document.getElementById('overlay');
+    const closeModal = document.querySelector('.close');
+    const buttons = document.querySelectorAll('.btn-1, .btn-2, .btn-3');
 
-//     buttons.forEach(button => {
-//         button.addEventListener('click', function() {
-//             // Remove active class from all buttons
-//             buttons.forEach(btn => btn.classList.remove('active'));
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const title = button.getAttribute('data-title');
+            const description = button.getAttribute('data-description');
+            const allergens = button.getAttribute('data-allergens');
 
-//             // Add active class to the clicked button
-//             this.classList.add('active');
+            // Update modal content
+            modal.querySelector('h2').textContent = title;
+            modal.querySelector('.description').textContent = description;
+            modal.querySelector('.allergens').textContent = allergens;
 
-//             // Update food cards based on the selected category
-//             const category = this.getAttribute('data-category');
-//             updateFoodCards(category);
-//         });
-//     });
+            modal.style.display = 'block';
+            overlay.style.display = 'block';
+        });
+    });
 
-//     function updateFoodCards(category) {
-//         // Clear existing food cards
-//         foodCardsContainer.innerHTML = '';
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        overlay.style.display = 'none';
+    });
 
-//         // Generate new food cards based on the selected category
-//         const foodItems = getFoodItemsByCategory(category);
-//         foodItems.forEach(item => {
-//             const card = document.createElement('div');
-//             card.className = 'food-card';
-//             card.textContent = item;
-//             foodCardsContainer.appendChild(card);
-//         });
-//     }
+    overlay.addEventListener('click', () => {
+        modal.style.display = 'none';
+        overlay.style.display = 'none';
+    });
 
-//     function getFoodItemsByCategory(category) {
-//         const foodData = {
-//             fruits: ['Apple', 'Banana', 'Orange'],
-//             vegetables: ['Carrot', 'Broccoli', 'Spinach'],
-//             meat: ['Chicken', 'Beef', 'Pork'],
-//             seafood: ['Salmon', 'Shrimp', 'Crab'],
-//             dairy: ['Milk', 'Cheese', 'Yogurt'],
-//             grains: ['Rice', 'Wheat', 'Oats'],
-//             sweets: ['Chocolate', 'Candy', 'Cake']
-//         };
-//         return foodData[category] || [];
-//     }
-// });
+    // Add event listeners to category buttons
+    document.querySelectorAll('.category-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove the "active" class from all buttons
+            document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+            // Add the "active" class to the clicked button
+            this.classList.add('active');
+        });
+    });
+});

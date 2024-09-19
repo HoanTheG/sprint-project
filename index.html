@@ -5,120 +5,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info Screen</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="info-screen">
         <header>
-            <h1>Info Screen Title</h1>
             <img class="logo" src="https://stromboli.dk/wp-content/uploads/2024/05/STROMBOLI-1.svg" alt="STROMBOLI (1)">
             <div class="language-buttons"> 
-                <a href="index.html" class="language-btn-en" id="english">English</a>
-                <a href="danish.html" class="language-btn-dk" id="danish">Danish</a>
+                <!-- Language selection buttons -->
+                <a href="/sprint-project/index.html" class="language-btn-en" id="english">ENGLISH</a>
+                <a href="./Danish/danish.html" class="language-btn-dk" id="danish">DANISH</a>
+                <p>Tuesday, 17:35:56</p>
             </div>
-
         </header>
         <main>
             <aside class="categories">
+                <!-- Category buttons -->
                 <a href="#meat" class="category-btn">Meat</a>
-                <a href="#vegetables" class="category-btn">Salads</a>
-                <a href="#meat" class="category-btn">Pizza</a>
-                <a href="#seafood" class="category-btn">Sides</a>
-                <a href="#dairy" class="category-btn">Pastries</a>
-                <a href="#grains" class="category-btn">Deserts</a>
-                <a href="#sweets" class="category-btn">Pasta</a>
+                <a href="#salads" class="category-btn">Salads</a>
+                <a href="#pizza" class="category-btn">Pizza</a>
+                <a href="#sides" class="category-btn">Sides</a>
+                <a href="#pastries" class="category-btn">Pastries</a>
+                <a href="#deserts" class="category-btn">Deserts</a>
+                <a href="#pasta" class="category-btn">Pasta</a>
             </aside>
+
             <hr>
+
             <section class="info">
+                <!-- Meat category -->
                 <div id="meat" class="food-cards">
                     <div class="food-card">
                         <img src="./assets/meat1.jpeg" alt="Meat">
-                        <a href="javascript:void(0);" class="btn-2">info</a>
+                        <a href="javascript:void(0);" class="btn-2" data-title="Meat" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
                     </div>
                     <div class="food-card">
                         <img src="./assets/meat2.jpeg" alt="Banana">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Banana" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
                     </div>
                     <div class="food-card">
-                        <img src="./assets/butterchicken.jpeg" alt="Orange">
+                        <img src="./assets/chicken.jpeg" alt="Chicken">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Chicken" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
                     </div>
                     <div class="food-card">
-                        <img src="./assets/butterchicken2.jpeg" alt="Orange">
+                        <img src="./assets/ham.jpeg" alt="Meat">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Meat" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
                     </div>
                     <div class="food-card">
-                        <img src="./assets/chicken.jpeg" alt="Orange">
-                    </div>
-                    <div class="food-card">
-                        <img src="./assets/ham.jpeg" alt="Orange">
-                    </div>
-                    <div class="food-card">
-                        <img src="./assets/rawham.jpeg" alt="Orange">
-                    </div>
-
-                <div id="vegetables" class="food-cards">
-                    <div class="food-card">
-                        <img src="path/to/carrot.jpg" alt="Carrot">
-                        <p>Carrot</p>
-                    </div>
-                    <div class="food-card">
-                        <img src="path/to/broccoli.jpg" alt="Broccoli">
-                        <p>Broccoli</p>
-                    </div>
-                    <div class="food-card">
-                        <img src="path/to/spinach.jpg" alt="Spinach">
-                        <p>Spinach</p>
+                        <img src="./assets/rawham.jpeg" alt="Meat">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Meat" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
                     </div>
                 </div>
-                <!-- Add similar structures for other categories -->
+
+
+
+
+
+                <!-- Salads category -->
+                <div id="salads" class="food-cards">
+                    <div class="food-card">
+                        <img src="assets/saladbeans.jpeg" alt="Salad Beans">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salad Beans" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/saladgreek.jpeg" alt="Salad Greek">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salad Greek" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/saladmozarella.jpeg" alt="Salad Beans">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salad Beans" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/saladred.jpeg" alt="Salad Beans">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salad Beans" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/saladtuna.jpeg" alt="Salad Beans">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salad Beans" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/salatbulgur.jpeg" alt="Salad Beans">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salad Beans" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/salatsmall.jpeg" alt="Salad Beans">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salad Beans" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/salattomtoe.jpeg" alt="Salad Beans">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salad Beans" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                </div>
+
+
+
+                <!-- Pizza Category -->
+                <div id="pizza" class="food-cards">
+                    <div class="food-card">
+                        <img src="assets/pizza.jpeg" alt="Pizza">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Pizza" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                </div>
+
+
+                <!-- Sides category -->
+                <div id="sides" class="food-cards">
+                    <div class="food-card">
+                        <img src="assets/fries.jpeg" alt="Fries">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Fries" data-description="Crispy golden fries." data-allergens="Allergens: Potatoes">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/garlicbread.jpeg" alt="Garlic Bread">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Garlic Bread" data-description="Garlic flavored bread." data-allergens="Allergens: Gluten, Dairy">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/dolmados.jpeg" alt="Dolmados">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Dolmados" data-description="Stuffed grape leaves." data-allergens="Allergens: None">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/potatoes.jpeg" alt="Potatoes">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Potatoes" data-description="Roasted potatoes." data-allergens="Allergens: Potatoes">i</a>
+                    </div>
+                </div>
+        
+                 <!-- Pastries category -->
+                 <div id="pastries" class="food-cards">
+                    <div class="food-card">
+                        <img src="assets/bread.jpeg" alt="Bread">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Bread" data-description="Freshly baked bread." data-allergens="Allergens: Gluten">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/breads.jpeg" alt="Breads">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Breads" data-description="Assorted breads." data-allergens="Allergens: Gluten">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/garlicbread.jpeg" alt="Garlic Bread">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Garlic Bread" data-description="Garlic flavored bread." data-allergens="Allergens: Gluten, Dairy">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/pastry1.jpeg" alt="Garlic Bread">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Garlic Bread" data-description="Garlic flavored bread." data-allergens="Allergens: Gluten, Dairy">i</a>
+                    </div>
+                </div>
+
+                <!-- Deserts category -->
+                <div id="deserts" class="food-cards">
+                    <div class="food-card">
+                        <img src="assets/cake.jpeg" alt="Bread">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Bread" data-description="Freshly baked bread." data-allergens="Allergens: Gluten">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/fruit.jpeg" alt="Breads">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Breads" data-description="Assorted breads." data-allergens="Allergens: Gluten">i</a>
+                    </div>
+                </div>
+
+                <!-- Pasta category -->
+                <div id="pasta" class="food-cards">
+                    <div class="food-card">
+                        <img src="assets/pasta1.jpeg" alt="Pasta">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Pasta" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/pasta3.jpeg" alt="Pasta">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Pasta" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="assets/pastasalad.jpeg" alt="Pasta">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Pasta" data-description="Description of this food can be adjusted in the a tag <3" data-allergens="Allergens: UX">i</a>
+                    </div>
+                </div>
             </section>
         </main>
+        <!-- Modal for more information -->
         <div id="modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2>More Information</h2>
-                <p>Here you can add more detailed information about the plan.</p>
+                <p class="description"></p>
+                <p class="allergens"></p>
             </div>
         </div>
         <div id="overlay" class="overlay"></div>
         <footer>
-            <h1>138DKK</h1>
-            <h2>Everthing is halal</h2>
+            <!-- <h1>EVERYTHING IS HALAL</h1> -->
+            <div class="price-buffet">
+                <div class="frokost-container buffet-item">
+                    <h1>Breakfast</h1>
+                    <p>Monday - Sunday</p>
+                    <p>11:00 - 14:00</p>
+                    <h2>100DKK</h2>
+                </div>
+                <div class="aften-container buffet-item">
+                    <h1>Lunch</h1>
+                    <p>Monday - Sunday</p>
+                    <p>17:00 - 21:00</p>
+                    <h2>200DKK</h2>
+                    
+                </div>
+                <div class="aften-container buffet-item">
+                    <h1>Night</h1>
+                    <p>Monday - Sunday</p>
+                    <p>22:00 - 23:00</p>
+                    <h2>300DKK</h2>
+                </div>
+            </div>
         </footer>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('modal');
-    const overlay = document.getElementById('overlay');
-    const closeModal = document.querySelector('.close');
-    const buttons = document.querySelectorAll('.btn-1, .btn-2, .btn-3');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            modal.style.display = 'block';
-            overlay.style.display = 'block';
-        });
-    });
-
-    closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-        overlay.style.display = 'none';
-    });
-
-    overlay.addEventListener('click', () => {
-        modal.style.display = 'none';
-        overlay.style.display = 'none';
-    });
-});
-    
-        document.getElementById('english').addEventListener('click', function() {
-            this.classList.add('filled');
-            document.getElementById('english').classList.remove('filled');
-            translatePage('en');
-        });
-    
-        document.getElementById('danish').addEventListener('click', function() {
-            this.classList.add('filled');
-            document.getElementById('danish').classList.remove('filled');
-            translatePage('da');
-        });
-    </script>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,82 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Screen</title>
+    <title>Info Skærm</title>
     <link rel="stylesheet" href="danish_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="info-screen">
         <header>
-            <h1>Info Screen Title</h1>
             <img class="logo" src="https://stromboli.dk/wp-content/uploads/2024/05/STROMBOLI-1.svg" alt="STROMBOLI (1)">
             <div class="language-buttons"> 
-                <a href="index.html" class="language-btn-en">English</a>
-                <a href="danish.html" class="language-btn-dk">Danish</a>
+                <!-- Sprogvalg knapper -->
+                <a href="/sprint-project/index.html" class="language-btn-en" id="english">ENGELSK</a>
+                <a href="./Danish/danish.html" class="language-btn-dk" id="danish">DANSK</a>
+                <p>Tirsdag, 17:35:56</p>
             </div>
-
         </header>
         <main>
             <aside class="categories">
-                <a href="#meat" class="category-btn">Kod</a>
-                <a href="#vegetables" class="category-btn">Salads</a>
-                <a href="#meat" class="category-btn">Pizza</a>
-                <a href="#seafood" class="category-btn">Sides</a>
-                <a href="#dairy" class="category-btn">Pastries</a>
-                <a href="#grains" class="category-btn">Deserts</a>
-                <a href="#sweets" class="category-btn">Pasta</a>
+                <!-- Kategori knapper -->
+                <a href="#meat" class="category-btn">Kød</a>
+                <a href="#salads" class="category-btn">Salater</a>
+                <a href="#pizza" class="category-btn">Pizza</a>
+                <a href="#sides" class="category-btn">Tilbehør</a>
+                <a href="#pastries" class="category-btn">Bagværk</a>
+                <a href="#deserts" class="category-btn">Desserter</a>
+                <a href="#pasta" class="category-btn">Pasta</a>
             </aside>
+
             <hr>
+
             <section class="info">
+                <!-- Kød kategori -->
                 <div id="meat" class="food-cards">
                     <div class="food-card">
-                        <img src="apple.jpg.png" alt="Meat">
+                        <img src="../assets/meat1.jpeg" alt="Kød">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Kød" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
                     </div>
                     <div class="food-card">
-                        <img src="path/to/banana.jpg" alt="Banana">
-                        <p>Banana</p>
+                        <img src="../assets/meat2.jpeg" alt="Banan">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Banan" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
                     </div>
                     <div class="food-card">
-                        <img src="path/to/orange.jpg" alt="Orange">
-                        <p>Orange</p>
+                        <img src="../assets/chicken.jpeg" alt="Kylling">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Kylling" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/ham.jpeg" alt="Kød">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Kød" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/rawham.jpeg" alt="Kød">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Kød" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
                     </div>
                 </div>
-                <div id="vegetables" class="food-cards">
+
+                <!-- Salater kategori -->
+                <div id="salads" class="food-cards">
                     <div class="food-card">
-                        <img src="path/to/carrot.jpg" alt="Carrot">
-                        <p>Carrot</p>
+                        <img src="../assets/saladbeans.jpeg" alt="Salat Bønner">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salat Bønner" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
                     </div>
                     <div class="food-card">
-                        <img src="path/to/broccoli.jpg" alt="Broccoli">
-                        <p>Broccoli</p>
+                        <img src="../assets/saladgreek.jpeg" alt="Græsk Salat">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Græsk Salat" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
                     </div>
                     <div class="food-card">
-                        <img src="path/to/spinach.jpg" alt="Spinach">
-                        <p>Spinach</p>
+                        <img src="../assets/saladmozarella.jpeg" alt="Salat Bønner">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salat Bønner" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/saladred.jpeg" alt="Salat Bønner">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salat Bønner" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/saladtuna.jpeg" alt="Salat Bønner">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salat Bønner" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/salatbulgur.jpeg" alt="Salat Bønner">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salat Bønner" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/salatsmall.jpeg" alt="Salat Bønner">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salat Bønner" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/salattomtoe.jpeg" alt="Salat Bønner">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Salat Bønner" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
                     </div>
                 </div>
-                <!-- Add similar structures for other categories -->
+
+                <!-- Pizza kategori -->
+                <div id="pizza" class="food-cards">
+                    <div class="food-card">
+                        <img src="../assets/pizza.jpeg" alt="Pizza">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Pizza" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
+                    </div>
+                </div>
+
+                <!-- Tilbehør kategori -->
+                <div id="sides" class="food-cards">
+                    <div class="food-card">
+                        <img src="../assets/fries.jpeg" alt="Pommes Frites">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Pommes Frites" data-description="Sprøde gyldne pommes frites." data-allergens="Allergener: Kartofler">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/garlicbread.jpeg" alt="Hvidløgsbrød">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Hvidløgsbrød" data-description="Hvidløgsbrød." data-allergens="Allergener: Gluten, Mælk">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/dolmados.jpeg" alt="Dolmados">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Dolmados" data-description="Fyldte vinblade." data-allergens="Allergener: Ingen">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/potatoes.jpeg" alt="Kartofler">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Kartofler" data-description="Ristede kartofler." data-allergens="Allergener: Kartofler">i</a>
+                    </div>
+                </div>
+
+                <!-- Bagværk kategori -->
+                <div id="pastries" class="food-cards">
+                    <div class="food-card">
+                        <img src="../assets/bread.jpeg" alt="Brød">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Brød" data-description="Friskbagt brød." data-allergens="Allergener: Gluten">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/breads.jpeg" alt="Brød">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Brød" data-description="Assorterede brød." data-allergens="Allergener: Gluten">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/garlicbread.jpeg" alt="Hvidløgsbrød">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Hvidløgsbrød" data-description="Hvidløgsbrød." data-allergens="Allergener: Gluten, Mælk">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/pastry1.jpeg" alt="Hvidløgsbrød">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Hvidløgsbrød" data-description="Hvidløgsbrød." data-allergens="Allergener: Gluten, Mælk">i</a>
+                    </div>
+                </div>
+
+                <!-- Desserter kategori -->
+                <div id="deserts" class="food-cards">
+                    <div class="food-card">
+                        <img src="../assets/cake.jpeg" alt="Kage">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Kage" data-description="Friskbagt kage." data-allergens="Allergener: Gluten">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/fruit.jpeg" alt="Frugt">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Frugt" data-description="Assorterede frugter." data-allergens="Allergener: Ingen">i</a>
+                    </div>
+                </div>
+
+                <!-- Pasta kategori -->
+                <div id="pasta" class="food-cards">
+                    <div class="food-card">
+                        <img src="../assets/pasta1.jpeg" alt="Pasta">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Pasta" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/pasta3.jpeg" alt="Pasta">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Pasta" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="../assets/pastasalad.jpeg" alt="Pasta">
+                        <a href="javascript:void(0);" class="btn-2" data-title="Pasta" data-description="Beskrivelse af denne mad kan justeres i a-tagget <3" data-allergens="Allergener: UX">i</a>
+                    </div>
+                </div>
             </section>
         </main>
+        <!-- Modal for mere information -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Mere Information</h2>
+                <p class="description"></p>
+                <p class="allergens"></p>
+            </div>
+        </div>
+        <div id="overlay" class="overlay"></div>
         <footer>
-            <h1>138DKK</h1>
-            <h2>Everthing is halal</h2>
+            <!-- <h1>ALT ER HALAL</h1> -->
+            <div class="price-buffet">
+                <div class="frokost-container buffet-item">
+                    <h1>Morgenmad</h1>
+                    <p>Mandag - Søndag</p>
+                    <p>11:00 - 14:00</p>
+                    <h2>138DKK</h2>
+                </div>
+                <div class="aften-container buffet-item">
+                    <h1>Frokost</h1>
+                    <p>Mandag - Søndag</p>
+                    <p>17:00 - 21:00</p>
+                    <h2>138DKK</h2>
+                </div>
+                <div class="aften-container buffet-item">
+                    <h1>Aften</h1>
+                    <p>Mandag - Søndag</p>
+                    <p>22:00 - 23:00</p>
+                    <h2>138DKK</h2>
+                </div>
+            </div>
         </footer>
     </div>
-    <script>
-    
-     document.getElementById('english').addEventListener('click', function() {
-            this.classList.add('filled');
-            document.getElementById('english').classList.remove('filled');
-            translatePage('en');
-        });
-    
-        document.getElementById('danish').addEventListener('click', function() {
-            this.classList.add('filled');
-            document.getElementById('danish').classList.remove('filled');
-            translatePage('da');
-        });
-    </script>
+
+    <!-- Link til ekstern JavaScript-fil -->
+    <script src="script_danish.js"></script>
 </body>
 </html>
