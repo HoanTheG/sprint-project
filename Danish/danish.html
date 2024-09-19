@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Screen</title>
+    <link rel="stylesheet" href="danish_style.css">
+</head>
+<body>
+    <div class="info-screen">
+        <header>
+            <h1>Info Screen Title</h1>
+            <img class="logo" src="https://stromboli.dk/wp-content/uploads/2024/05/STROMBOLI-1.svg" alt="STROMBOLI (1)">
+            <div class="language-buttons"> 
+                <a href="index.html" class="language-btn-en">English</a>
+                <a href="danish.html" class="language-btn-dk">Danish</a>
+            </div>
+
+        </header>
+        <main>
+            <aside class="categories">
+                <a href="#meat" class="category-btn">Kod</a>
+                <a href="#vegetables" class="category-btn">Salads</a>
+                <a href="#meat" class="category-btn">Pizza</a>
+                <a href="#seafood" class="category-btn">Sides</a>
+                <a href="#dairy" class="category-btn">Pastries</a>
+                <a href="#grains" class="category-btn">Deserts</a>
+                <a href="#sweets" class="category-btn">Pasta</a>
+            </aside>
+            <hr>
+            <section class="info">
+                <div id="meat" class="food-cards">
+                    <div class="food-card">
+                        <img src="apple.jpg.png" alt="Meat">
+                    </div>
+                    <div class="food-card">
+                        <img src="path/to/banana.jpg" alt="Banana">
+                        <p>Banana</p>
+                    </div>
+                    <div class="food-card">
+                        <img src="path/to/orange.jpg" alt="Orange">
+                        <p>Orange</p>
+                    </div>
+                </div>
+                <div id="vegetables" class="food-cards">
+                    <div class="food-card">
+                        <img src="path/to/carrot.jpg" alt="Carrot">
+                        <p>Carrot</p>
+                    </div>
+                    <div class="food-card">
+                        <img src="path/to/broccoli.jpg" alt="Broccoli">
+                        <p>Broccoli</p>
+                    </div>
+                    <div class="food-card">
+                        <img src="path/to/spinach.jpg" alt="Spinach">
+                        <p>Spinach</p>
+                    </div>
+                </div>
+                <!-- Add similar structures for other categories -->
+            </section>
+        </main>
+        <footer>
+            <h1>138DKK</h1>
+            <h2>Everthing is halal</h2>
+        </footer>
+    </div>
+    <script>
+    
+     document.getElementById('english').addEventListener('click', function() {
+            this.classList.add('filled');
+            document.getElementById('english').classList.remove('filled');
+            translatePage('en');
+        });
+    
+        document.getElementById('danish').addEventListener('click', function() {
+            this.classList.add('filled');
+            document.getElementById('danish').classList.remove('filled');
+            translatePage('da');
+        });
+    </script>
+</body>
+</html>
